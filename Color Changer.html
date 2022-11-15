@@ -1,0 +1,41 @@
+<!-- Adam Lucas -->
+<!-- 11/17/2022 -->
+
+<html>
+<head>
+
+<!-- Title -->
+
+    <title>Color Changer</title>
+	
+	<!-- Making the boxes and the style -->
+	
+    <style>
+        div
+        {
+            width: 200px;
+            height: 200px;
+            background-color: grey;
+            float: left;
+            margin: 5px;
+        }
+    </style>
+</head>
+
+<!-- Making the colors -->
+
+<body>
+    <div id="one" data-color="#C4122E" onclick="fun(this)"></div>
+    <div id="two" data-color="#097969" onclick="fun(this)"></div>
+    <div id="three" data-color="#1B458F" onclick="fun(this)"></div>
+	
+	<!-- Javascript -->
+	
+    <script>
+        function fun(e){
+            var ele = document.getElementById(e.id);
+            ele.style.backgroundColor = ele.dataset.color;
+        }
+    </script>
+</body>
+</html>
